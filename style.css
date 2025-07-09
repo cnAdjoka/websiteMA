@@ -650,3 +650,170 @@
   .service-box:nth-child(4) {
     animation-delay: 0.6s;
   }
+
+
+  @media (max-width: 576px) {
+    /* Hero Section */
+    .hero {
+        min-height: 450px;
+        margin-top: 60px;
+    }
+    
+    .logo-hero {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+    
+    .hero h1 {
+        font-size: 1.8rem;
+        letter-spacing: 1px;
+        line-height: 1.2;
+    }
+    
+    .hero-tagline {
+        font-size: 1.1rem;
+    }
+    
+    .hero-mission {
+        font-size: 1rem;
+        margin-bottom: 2rem;
+    }
+    
+    /* Navigation */
+    nav {
+        top: 60px;
+        height: calc(100vh - 60px);
+        width: 100%;
+    }
+    
+    /* Section Titles */
+    .section-title h2 {
+        font-size: 2rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    .section-title p {
+        font-size: 0.95rem;
+        padding: 0 1rem;
+    }
+    
+    /* Buttons */
+    .btn {
+        padding: 0.7rem 1.8rem;
+        font-size: 0.85rem;
+    }
+    
+    /* Services */
+    .services {
+        padding: 4rem 0;
+    }
+    
+    .services-container {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    /* About Section */
+    .about {
+        padding: 4rem 0;
+    }
+    
+    .about-content h2 {
+        font-size: 2rem;
+    }
+    
+    .about-content p {
+        font-size: 1rem;
+        padding: 0 0.5rem;
+    }
+    
+    /* Contact Section */
+    .contact {
+        padding: 4rem 0;
+    }
+    
+    .contact-info {
+        padding: 1.5rem;
+    }
+    
+    .contact-item {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 1rem;
+    }
+    
+    .contact-item i {
+        margin-bottom: 0.5rem;
+        margin-right: 0;
+    }
+    
+    .social-links {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    /* Footer */
+    footer {
+        padding: 3rem 0 1.5rem;
+    }
+    
+    .footer-container {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .footer-col {
+        margin-bottom: 1.5rem;
+    }
+    
+    .footer-col h3 {
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+    }
+    
+    /* General Spacing Adjustments */
+    .container {
+        padding: 0 1rem;
+    }
+    
+    .section-title {
+        margin-bottom: 2rem;
+    }
+    
+    /* Team Photos */
+    .team-photos {
+        grid-template-columns: 1fr;
+    }
+    
+    .team-photos img {
+        height: 200px;
+    }
+}
+
+/* Extra Small Devices (below 400px) */
+@media (max-width: 400px) {
+    .hero h1 {
+        font-size: 1.5rem;
+    }
+    
+    .hero-tagline {
+        font-size: 1rem;
+    }
+    
+    .hero-btn {
+        padding: 0.8rem 1.8rem;
+        font-size: 0.8rem;
+    }
+    
+    .section-title h2 {
+        font-size: 1.7rem;
+    }
+    
+    .service-box h3 {
+        font-size: 1.2rem;
+    }
+    
+    .service-box p {
+        font-size: 0.95rem;
+    }
+}
