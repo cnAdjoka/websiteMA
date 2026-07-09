@@ -3,84 +3,170 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Paysagement - Maintenance Adjoka</title>
+    <title>Paysagement | Aménagement Extérieur — Maintenance Adjoka</title>
+    <meta name="description" content="Services de paysagement : pose de tourbe, plates-bandes, excavation, ensemencement et nettoyage. Aménagements extérieurs sur mesure.">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="services.css">
 </head>
-<body>
-    <header>
-        <div class="container header-container">
-           <div class="logo">
-  <a href="index.html" style="color: inherit; text-decoration: none;">
-    Maintenance<span style="color: #d4af37;">Adjoka</span>
-  </a>
-</div>           <nav>
+<body class="service-page">
+
+<div id="progress-bar"></div>
+<div id="nav-overlay" class="nav-overlay"></div>
+
+<header>
+    <div class="container header-container">
+        <a href="index.html" class="logo">Maintenance<span>Adjoka</span></a>
+        <nav id="nav" aria-label="Navigation principale">
+            <ul>
+                <li><a href="index.html#accueil">Accueil</a></li>
+                <li class="nav-dropdown">
+                    <a href="index.html#services">Services <i class="fas fa-chevron-down chevron"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="paveUni.html"><span class="drop-icon"><i class="fas fa-th"></i></span> Pavé-Uni</a></li>
+                        <li><a href="paysagement.html"><span class="drop-icon"><i class="fas fa-leaf"></i></span> Paysagement</a></li>
+                        <li><a href="tonteDeGazon.html"><span class="drop-icon"><i class="fas fa-cut"></i></span> Tonte de Gazon</a></li>
+                        <li><a href="NettoPression.html"><span class="drop-icon"><i class="fas fa-tint"></i></span> Nettoyage à Pression</a></li>
+                    </ul>
+                </li>
+                <li><a href="index.html#about">À propos</a></li>
+                <li><a href="index.html#contact" class="nav-cta">Contactez-nous</a></li>
+            </ul>
+        </nav>
+        <button class="hamburger" id="hamburger" aria-label="Ouvrir le menu">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+</header>
+
+<!-- HERO -->
+<section class="service-hero" style="background-image: url('pictures/paysagement.png');">
+    <div class="container">
+        <div class="service-hero-label">Aménagement Sur Mesure</div>
+        <h1>Paysagement</h1>
+        <p>Nous créons des espaces verts qui reflètent votre vision, adaptés à votre terrain et à vos besoins.</p>
+    </div>
+</section>
+
+<!-- INTRO -->
+<section class="service-intro">
+    <div class="container" data-reveal>
+        <span class="section-label">Notre approche</span>
+        <p>Chaque projet de paysagement est unique. Nous travaillons avec vous pour concevoir et réaliser des aménagements extérieurs durables et esthétiques — de l'ouverture du terrain jusqu'à la touche finale. Que ce soit pour un projet complet ou un besoin spécifique, notre équipe s'adapte à vos exigences.</p>
+    </div>
+</section>
+
+<!-- SERVICES -->
+<section class="service-section">
+    <div class="container">
+        <div class="section-title" data-reveal>
+            <span class="section-label">Nos prestations</span>
+            <h2>Services de Paysagement</h2>
+            <div class="title-line"></div>
+        </div>
+        <div class="feature-grid">
+            <div class="feature-card" data-reveal data-delay="1">
+                <div class="feature-icon"><i class="fas fa-layer-group"></i></div>
+                <h3>Pose de Tourbe</h3>
+                <p>Installation de tourbe en plaques pour un résultat immédiat et une pelouse uniforme et dense dès le premier jour.</p>
+            </div>
+            <div class="feature-card" data-reveal data-delay="2">
+                <div class="feature-icon"><i class="fas fa-seedling"></i></div>
+                <h3>Plates-Bandes &amp; Fleurs</h3>
+                <p>Création et aménagement de plates-bandes florales et arbustives pour embellir les pourtours de votre propriété.</p>
+            </div>
+            <div class="feature-card" data-reveal data-delay="3">
+                <div class="feature-icon"><i class="fas fa-tractor"></i></div>
+                <h3>Excavation</h3>
+                <p>Préparation et ouverture de terrains, nivellement et déblaiement pour accueillir vos nouveaux aménagements extérieurs.</p>
+            </div>
+            <div class="feature-card" data-reveal data-delay="4">
+                <div class="feature-icon"><i class="fas fa-leaf"></i></div>
+                <h3>Ensemencement</h3>
+                <p>Semis de gazon pour les zones à rétablir ou les nouvelles surfaces. Un engazonnement propre, uniforme et durable.</p>
+            </div>
+            <div class="feature-card" data-reveal data-delay="1">
+                <div class="feature-icon"><i class="fas fa-broom"></i></div>
+                <h3>Nettoyage de Plates-Bandes</h3>
+                <p>Enlèvement des mauvaises herbes, des feuilles mortes et des débris pour garder vos plates-bandes nettes et saines tout au long de la saison.</p>
+            </div>
+            <div class="feature-card" data-reveal data-delay="2">
+                <div class="feature-icon"><i class="fas fa-star"></i></div>
+                <h3>Et Bien Plus…</h3>
+                <p>Chaque propriété a ses propres besoins. Contactez-nous pour discuter de votre projet spécifique — nous trouverons la meilleure solution pour vous.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- GALERIE -->
+<section class="gallery-section">
+    <div class="container">
+        <div class="section-title" data-reveal>
+            <span class="section-label">Nos travaux</span>
+            <h2>Galerie</h2>
+            <p>Aperçu de nos réalisations.</p>
+            <div class="title-line"></div>
+        </div>
+        <div class="gallery-grid">
+            <div class="gallery-item" data-reveal data-delay="1">
+                <img src="pictures/paysagement/tourbe1.jpg" alt="Pose de tourbe — Maintenance Adjoka">
+            </div>
+            <div class="gallery-item" data-reveal data-delay="2">
+                <img src="pictures/paysagement/tourbe2.jpg" alt="Pose de tourbe — Maintenance Adjoka">
+            </div>
+            <div class="gallery-item" data-reveal data-delay="3">
+                <img src="pictures/paysagement/contourArbre.jpg" alt="Contour d'arbre — Maintenance Adjoka">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA -->
+<section class="service-cta-section">
+    <div class="container">
+        <div data-reveal>
+            <span class="section-label">Votre projet, notre priorité</span>
+            <h2>Transformons votre extérieur ensemble</h2>
+            <p>Obtenez une soumission gratuite et sans engagement. Notre équipe est prête à évaluer votre espace et à vous proposer un plan personnalisé.</p>
+            <a href="index.html#contact" class="btn"><i class="fas fa-paper-plane"></i> Demander une soumission gratuite</a>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <div class="container">
+        <div class="footer-top">
+            <div class="footer-brand">
+                <a href="index.html" class="logo">Maintenance<span>Adjoka</span></a>
+                <p>Experts en entretien et rénovation extérieure. Qualité et durabilité garanties.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Navigation</h4>
                 <ul>
                     <li><a href="index.html#accueil">Accueil</a></li>
                     <li><a href="index.html#services">Services</a></li>
                     <li><a href="index.html#about">À propos</a></li>
                     <li><a href="index.html#contact">Contact</a></li>
                 </ul>
-            </nav>
-        </div>
-    </header>
-
-    <main class="service-page">
-        <section class="service-hero" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('pictures/paysagement.png');">
-            <div class="container">
-                <h1>Paysagement Sur Mesure</h1>
             </div>
-        </section>
-
-        <section class="service-details">
-            <div class="container">
-                <div class="service-content">
-                    <h2>Transformez votre extérieur</h2>
-                    <p>Création complète d'aménagements paysagers adaptés à votre espace et à vos goûts. De la conception à la réalisation, nous donnons vie à votre vision.</p>
-                    
-                    <h3>Nos réalisations :</h3>
-                    <ul>
-                        <li>Ouverture de terrains</li>
-                        <li>Plantation d'arbustes</li>
-                        <li>Aménagement de plates-bandes</li>
-                        <li>Création de terrasses en bois</li>
-                    </ul>
-
-                    <!-- <div class="service-cta">
-                        <a href="#contact" class="btn">Demander un devis</a>
-                    </div> -->
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-                <div class="container">
-            <div class="footer-container">
-                <div class="footer-col">
-                    <h3>Maintenance Adjoka</h3>
-                    <p>Experts en entretien extérieur </p>
-                </div>
-                <div class="footer-col">
-                    <h3>Services</h3>
-                    <ul>
-                        <li><a href="tonteDeGazon.html">Tonte de gazon</a></li>
-                        <li><a href="paysagement.html">Paysagement</a></li>
-                        <li><a href="NettoPression.html">Nettoyage pression</a></li>
-                        <li><a href="paveUni.html">Pavé-uni</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h3>Contact</h3>
-                    <p><i class="fas fa-phone"></i> 438-988-1574</p>
-                    <p><i class="fas fa-envelope"></i> maintenance.adjoka@gmail.com</p>
-                </div>
-            </div>
-            <div class="copyright">
-                <p>&copy; 2026 Maintenance Adjoka. Tous droits réservés.</p>
+            <div class="footer-col">
+                <h4>Services</h4>
+                <ul>
+                    <li><a href="paveUni.html">Pavé-uni</a></li>
+                    <li><a href="paysagement.html">Paysagement</a></li>
+                    <li><a href="tonteDeGazon.html">Tonte de gazon</a></li>
+                    <li><a href="NettoPression.html">Nettoyage à pression</a></li>
+                </ul>
             </div>
         </div>
-    </footer>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Maintenance Adjoka. Tous droits réservés. &nbsp;|&nbsp; <a href="politique-de-confidentialite.html">Politique de confidentialité</a></p>
+        </div>
+    </div>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>

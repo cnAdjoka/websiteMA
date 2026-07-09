@@ -3,85 +3,164 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tonte de Gazon - Maintenance Adjoka</title>
+    <title>Tonte de Gazon | Entretien de Pelouse — Maintenance Adjoka</title>
+    <meta name="description" content="Service de tonte professionnelle : coupe de la pelouse, taille des bordures et nettoyage complet du terrain. Rapide, soigné et fiable.">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="services.css">
 </head>
-<body>
-    <header>
-        <div class="container header-container">
-           <div class="logo">
-  <a href="index.html" style="color: inherit; text-decoration: none;">
-    Maintenance<span style="color: #d4af37;">Adjoka</span>
-  </a>
-</div>           <nav>
+<body class="service-page">
+
+<div id="progress-bar"></div>
+<div id="nav-overlay" class="nav-overlay"></div>
+
+<header>
+    <div class="container header-container">
+        <a href="index.html" class="logo">Maintenance<span>Adjoka</span></a>
+        <nav id="nav" aria-label="Navigation principale">
+            <ul>
+                <li><a href="index.html#accueil">Accueil</a></li>
+                <li class="nav-dropdown">
+                    <a href="index.html#services">Services <i class="fas fa-chevron-down chevron"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="paveUni.html"><span class="drop-icon"><i class="fas fa-th"></i></span> Pavé-Uni</a></li>
+                        <li><a href="paysagement.html"><span class="drop-icon"><i class="fas fa-leaf"></i></span> Paysagement</a></li>
+                        <li><a href="tonteDeGazon.html"><span class="drop-icon"><i class="fas fa-cut"></i></span> Tonte de Gazon</a></li>
+                        <li><a href="NettoPression.html"><span class="drop-icon"><i class="fas fa-tint"></i></span> Nettoyage à Pression</a></li>
+                    </ul>
+                </li>
+                <li><a href="index.html#about">À propos</a></li>
+                <li><a href="index.html#contact" class="nav-cta">Contactez-nous</a></li>
+            </ul>
+        </nav>
+        <button class="hamburger" id="hamburger" aria-label="Ouvrir le menu">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+</header>
+
+<!-- HERO -->
+<section class="service-hero" style="background-image: url('pictures/lawnMowing.jpg');">
+    <div class="container">
+        <div class="service-hero-label">Entretien de Pelouse</div>
+        <h1>Tonte de Gazon</h1>
+        <p>Un gazon propre et bien entretenu, à chaque passage. Rapide, soigné et sans tracas.</p>
+    </div>
+</section>
+
+<!-- INTRO -->
+<section class="service-intro">
+    <div class="container" data-reveal>
+        <span class="section-label">Notre service</span>
+        <p>Un terrain bien entretenu fait toute la différence. Notre service de tonte professionnelle inclut la coupe de la pelouse, la taille des bordures et le nettoyage complet — pour que votre propriété soit impeccable après chaque visite.</p>
+    </div>
+</section>
+
+<!-- CE QUI EST INCLUS -->
+<section class="service-section">
+    <div class="container">
+        <div class="section-title" data-reveal>
+            <span class="section-label">Ce qui est inclus</span>
+            <h2>Un Service Complet, Sans Compromis</h2>
+            <div class="title-line"></div>
+        </div>
+        <div class="feature-grid">
+            <div class="feature-card" data-reveal data-delay="1">
+                <div class="feature-icon"><i class="fas fa-cut"></i></div>
+                <h3>Coupe de la Pelouse</h3>
+                <p>Nous tondons votre gazon à la hauteur optimale pour sa santé et son apparence, en suivant les courbes et contours de votre terrain avec précision.</p>
+            </div>
+            <div class="feature-card" data-reveal data-delay="2">
+                <div class="feature-icon"><i class="fas fa-border-all"></i></div>
+                <h3>Taille des Bordures</h3>
+                <p>Les bordures le long des trottoirs, entrées, clôtures et plates-bandes sont taillées avec soin pour un résultat net et professionnel.</p>
+            </div>
+            <div class="feature-card" data-reveal data-delay="3">
+                <div class="feature-icon"><i class="fas fa-broom"></i></div>
+                <h3>Nettoyage du Terrain</h3>
+                <p>Une fois la tonte et la taille terminées, nous ramassons et nettoyons les déchets de tonte afin de vous laisser un espace propre et agréable.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- GALERIE -->
+<section class="gallery-section">
+    <div class="container">
+        <div class="section-title" data-reveal>
+            <span class="section-label">Nos travaux</span>
+            <h2>Galerie</h2>
+            <p>Aperçu de nos réalisations.</p>
+            <div class="title-line"></div>
+        </div>
+        <div class="gallery-grid">
+            <div class="gallery-item" data-reveal data-delay="1">
+                <img src="pictures/gazon/gazon.jpg" alt="Pelouse fraîchement tondue — Maintenance Adjoka">
+            </div>
+            <div class="gallery-item" data-reveal data-delay="2">
+                <img src="pictures/gazon/GazonAdrian.jpg" alt="Tonte de gazon — Maintenance Adjoka">
+            </div>
+            <div class="gallery-item" data-reveal data-delay="3">
+                <img src="pictures/gazon/GazonBassem.jpg" alt="Tonte de gazon — Maintenance Adjoka">
+            </div>
+            <div class="gallery-item" data-reveal data-delay="1">
+                <img src="pictures/gazon/GazonJimmy.jpg" alt="Tonte de gazon — Maintenance Adjoka">
+            </div>
+            <div class="gallery-item" data-reveal data-delay="2">
+                <img src="pictures/gazon/gazonJimmy2.jpg" alt="Tonte de gazon — Maintenance Adjoka">
+            </div>
+            <div class="gallery-item" data-reveal data-delay="3">
+                <img src="pictures/gazon/gazonMartin.jpg" alt="Tonte de gazon — Maintenance Adjoka">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA -->
+<section class="service-cta-section">
+    <div class="container">
+        <div data-reveal>
+            <span class="section-label">Un gazon impeccable</span>
+            <h2>Réservez votre service de tonte</h2>
+            <p>Contactez-nous pour établir un horaire d'entretien qui vous convient. Nous offrons un service fiable et ponctuel, semaine après semaine.</p>
+            <a href="index.html#contact" class="btn"><i class="fas fa-paper-plane"></i> Demander une soumission gratuite</a>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <div class="container">
+        <div class="footer-top">
+            <div class="footer-brand">
+                <a href="index.html" class="logo">Maintenance<span>Adjoka</span></a>
+                <p>Experts en entretien et rénovation extérieure. Qualité et durabilité garanties.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Navigation</h4>
                 <ul>
                     <li><a href="index.html#accueil">Accueil</a></li>
                     <li><a href="index.html#services">Services</a></li>
                     <li><a href="index.html#about">À propos</a></li>
                     <li><a href="index.html#contact">Contact</a></li>
                 </ul>
-            </nav>
-        </div>
-    </header>
-
-    <main class="service-page">
-        <section class="service-hero" style="background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)),url(pictures/lawnMowing.jpg);">
-            <div class="container">
-                <h1>Tonte de Gazon </h1>
             </div>
-        </section>
-
-        <section class="service-details">
-            <div class="container">
-                <div class="service-content">
-                    <h2>Un gazon parfait toute l'année</h2>
-                    <p>Notre service de tonte professionnelle garantit une pelouse toujours impeccable. Nous adaptons la fréquence de tonte et la hauteur de coupe en fonction du type de gazon et de la saison.</p>
-                    
-                    <h3>Nos avantages :</h3>
-                    <ul>
-                        <li>Tonte régulière selon vos besoins</li>
-                        <li>Hauteur de coupe optimale pour la santé du gazon </li>
-                        <li>Équipements professionnels</li>
-                        <li>Ramassage des déchets inclus</li>
-                        <li>Service fiable et ponctuel</li>
-                    </ul>
-
-                    <!-- <div class="service-cta">
-                        <a href="#contact" class="btn">Demander un devis</a>
-                    </div> -->
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <div class="container">
-            <div class="footer-container">
-                <div class="footer-col">
-                    <h3>Maintenance Adjoka</h3>
-                    <p>Experts en entretien extérieur</p>
-                </div>
-                <div class="footer-col">
-                    <h3>Services</h3>
-                    <ul>
-                        <li><a href="tonteDeGazon.html">Tonte de gazon</a></li>
-                        <li><a href="paysagement.html">Paysagement</a></li>
-                        <li><a href="NettoPression.html">Nettoyage pression</a></li>
-                        <li><a href="paveUni.html">Pavé-uni</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h3>Contact</h3>
-                    <p><i class="fas fa-phone"></i> 438-988-1574</p>
-                    <p><i class="fas fa-envelope"></i> maintenance.adjoka@gmail.com</p>
-                </div>
-            </div>
-            <div class="copyright">
-                <p>&copy; 2026 Maintenance Adjoka. Tous droits réservés.</p>
+            <div class="footer-col">
+                <h4>Services</h4>
+                <ul>
+                    <li><a href="paveUni.html">Pavé-uni</a></li>
+                    <li><a href="paysagement.html">Paysagement</a></li>
+                    <li><a href="tonteDeGazon.html">Tonte de gazon</a></li>
+                    <li><a href="NettoPression.html">Nettoyage à pression</a></li>
+                </ul>
             </div>
         </div>
-    </footer>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Maintenance Adjoka. Tous droits réservés. &nbsp;|&nbsp; <a href="politique-de-confidentialite.html">Politique de confidentialité</a></p>
+        </div>
+    </div>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>

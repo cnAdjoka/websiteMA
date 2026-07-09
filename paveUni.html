@@ -3,86 +3,224 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pavé-Uni - Maintenance Adjoka</title>
+    <title>Pavé-Uni | Installation, Réparation &amp; Entretien — Maintenance Adjoka</title>
+    <meta name="description" content="Services complets de pavé-uni : nivellement, remplacement de pavés, installation neuve, allées, trottoirs, marches japonaises et patios.">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="services.css">
 </head>
-<body>
-    <header>
-        <div class="container header-container">
-           <div class="logo">
-  <a href="index.html" style="color: inherit; text-decoration: none;">
-    Maintenance<span style="color: #d4af37;">Adjoka</span>
-  </a>
-</div>           <nav>
+<body class="service-page">
+
+<div id="progress-bar"></div>
+<div id="nav-overlay" class="nav-overlay"></div>
+
+<header>
+    <div class="container header-container">
+        <a href="index.html" class="logo">Maintenance<span>Adjoka</span></a>
+        <nav id="nav" aria-label="Navigation principale">
+            <ul>
+                <li><a href="index.html#accueil">Accueil</a></li>
+                <li class="nav-dropdown">
+                    <a href="index.html#services">Services <i class="fas fa-chevron-down chevron"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="paveUni.html"><span class="drop-icon"><i class="fas fa-th"></i></span> Pavé-Uni</a></li>
+                        <li><a href="paysagement.html"><span class="drop-icon"><i class="fas fa-leaf"></i></span> Paysagement</a></li>
+                        <li><a href="tonteDeGazon.html"><span class="drop-icon"><i class="fas fa-cut"></i></span> Tonte de Gazon</a></li>
+                        <li><a href="NettoPression.html"><span class="drop-icon"><i class="fas fa-tint"></i></span> Nettoyage à Pression</a></li>
+                    </ul>
+                </li>
+                <li><a href="index.html#about">À propos</a></li>
+                <li><a href="index.html#contact" class="nav-cta">Contactez-nous</a></li>
+            </ul>
+        </nav>
+        <button class="hamburger" id="hamburger" aria-label="Ouvrir le menu">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+</header>
+
+<!-- HERO -->
+<section class="service-hero" style="background-image: url('pictures/Interlock-Driveway-scaled.webp');">
+    <div class="container">
+        <div class="service-hero-label">Notre Spécialité</div>
+        <h1>Pavé-Uni</h1>
+        <p>Installation, réparation et entretien — des surfaces durables qui rehaussent votre propriété.</p>
+    </div>
+</section>
+
+<!-- INTRO -->
+<section class="service-intro">
+    <div class="container" data-reveal>
+        <span class="section-label">Nos services</span>
+        <p>Le pavé-uni, c'est notre cœur de métier. Nous intervenons sur tous types de surfaces : entrées, allées, sentiers, patios et bien plus. Qu'il s'agisse d'une installation complète ou d'une réparation ciblée, notre équipe garantit un résultat soigné et durable.</p>
+    </div>
+</section>
+
+<!-- SERVICES -->
+<section class="service-section" id="services">
+    <div class="container">
+        <div class="section-title" data-reveal>
+            <span class="section-label">Ce que nous offrons</span>
+            <h2>Nos Services en Pavé-Uni</h2>
+            <div class="title-line"></div>
+        </div>
+        <div class="feature-grid">
+            <div class="feature-card" data-reveal data-delay="1">
+                <div class="feature-icon"><i class="fas fa-level-down-alt"></i></div>
+                <h3>Nivellement</h3>
+                <p>Avec le temps, les pavés s'affaissent ou se déplacent. Nous réalignerons chaque pavé pour retrouver une surface plane, stable et sécuritaire — sans remplacer toute la surface.</p>
+            </div>
+            <div class="feature-card" data-reveal data-delay="2">
+                <div class="feature-icon"><i class="fas fa-tools"></i></div>
+                <h3>Remplacement de Pavés</h3>
+                <p>Pavés fissurés, cassés ou décolorés ? Nous les retirons et les remplaçons par des pavés assortis, pour un résultat homogène et esthétique.</p>
+            </div>
+            <div class="feature-card" data-reveal data-delay="3">
+                <div class="feature-icon"><i class="fas fa-th"></i></div>
+                <h3>Installation Neuve</h3>
+                <p>Vous souhaitez créer une nouvelle allée, un trottoir ou un patio ? Nous réalisons l'installation complète, de la préparation du sol à la finition, avec les matériaux de votre choix.</p>
+            </div>
+            <div class="feature-card highlight" data-reveal data-delay="4" id="entretien">
+                <div class="feature-icon"><i class="fas fa-spray-can"></i></div>
+                <h3>Entretien &amp; Sable Polymère</h3>
+                <p>L'entretien régulier prolonge la vie de vos pavés. Nous effectuons le nettoyage à pression des joints et procédons au remplacement du sable polymère pour une protection optimale contre les mauvaises herbes et l'eau.</p>
+                <a href="NettoPression.html" class="feature-link">En savoir plus sur le nettoyage <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- TYPES DE PROJETS -->
+<section class="project-types">
+    <div class="container">
+        <div class="section-title" data-reveal>
+            <span class="section-label">Nos réalisations</span>
+            <h2>Types de Projets</h2>
+            <p>Chaque espace est unique. Voici les types d'aménagements que nous réalisons.</p>
+            <div class="title-line"></div>
+        </div>
+        <div class="types-grid">
+            <div class="type-card" data-reveal data-delay="1">
+                <div class="type-icon"><i class="fas fa-walking"></i></div>
+                <h4>Allées &amp; Sentiers</h4>
+                <p>Allées piétonnes et sentiers en pavé-uni, élégants et durables.</p>
+            </div>
+            <div class="type-card" data-reveal data-delay="2">
+                <div class="type-icon"><i class="fas fa-shoe-prints"></i></div>
+                <h4>Trottoirs &amp; Passages</h4>
+                <p>Trottoirs latéraux, passages et chemins menant à votre entrée.</p>
+            </div>
+            <div class="type-card" data-reveal data-delay="3">
+                <div class="type-icon"><i class="fas fa-grip-horizontal"></i></div>
+                <h4>Marches Japonaises</h4>
+                <p>Dalles posées en pas japonais pour un effet naturel et contemporain.</p>
+            </div>
+            <div class="type-card" data-reveal data-delay="4">
+                <div class="type-icon"><i class="fas fa-umbrella-beach"></i></div>
+                <h4>Patios &amp; Terrasses</h4>
+                <p>Espaces de détente en pavé-uni pour profiter pleinement de l'extérieur.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- GALERIE -->
+<section class="gallery-section">
+    <div class="container">
+        <div class="section-title" data-reveal>
+            <span class="section-label">Notre travail</span>
+            <h2>Galerie de Réalisations</h2>
+            <div class="title-line"></div>
+        </div>
+        <div class="gallery-grid">
+            <div class="gallery-item" data-reveal data-delay="1">
+                <img src="pictures/pave/paveCollie.jpg" alt="Pavé-uni — Maintenance Adjoka">
+            </div>
+            <div class="gallery-item" data-reveal data-delay="2">
+                <img src="pictures/pave/paveMJapreswet.jpg" alt="Pavé-uni avant travaux — Maintenance Adjoka">
+            </div>
+            <div class="gallery-item" data-reveal data-delay="3">
+                <img src="pictures/pave/pavelynx.jpg" alt="Pavé-uni — Maintenance Adjoka">
+            </div>
+            <div class="gallery-placeholder" data-reveal data-delay="1">
+                <i class="fas fa-camera"></i>
+                <span>Réalisations à venir</span>
+            </div>
+            <div class="gallery-<p></p>laceholder" data-reveal data-delay="2">
+                <i class="fas fa-camera"></i>
+                <span>Réalisations à venir</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- AVANT / APRÈS -->
+<section class="before-after-section">
+    <div class="container">
+        <div class="section-title" data-reveal>
+            <span class="section-label">Nos résultats</span>
+            <h2>Avant &amp; Après</h2>
+            <p>La transformation de vos surfaces, en images.</p>
+            <div class="title-line"></div>
+        </div>
+        <div class="before-after">
+            <div class="ba-panel before" data-reveal="left">
+                <img src="pictures/pave/pvCOllieavant.jpg" alt="Pavé-uni avant rénovation">
+                <div class="ba-label">Avant</div>
+            </div>
+            <div class="ba-panel after" data-reveal="right">
+                <img src="pictures/pave/paveCollie.jpg" alt="Pavé-uni après rénovation">
+                <div class="ba-label">Après</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA -->
+<section class="service-cta-section">
+    <div class="container">
+        <div data-reveal>
+            <span class="section-label">Passez à l'action</span>
+            <h2>Prêt à transformer votre espace ?</h2>
+            <p>Contactez-nous pour une soumission gratuite. Nous évaluerons votre projet et vous proposerons la meilleure solution.</p>
+            <a href="index.html#contact" class="btn"><i class="fas fa-paper-plane"></i> Demander une soumission gratuite</a>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <div class="container">
+        <div class="footer-top">
+            <div class="footer-brand">
+                <a href="index.html" class="logo">Maintenance<span>Adjoka</span></a>
+                <p>Experts en entretien et rénovation extérieure. Qualité et durabilité garanties.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Navigation</h4>
                 <ul>
                     <li><a href="index.html#accueil">Accueil</a></li>
                     <li><a href="index.html#services">Services</a></li>
                     <li><a href="index.html#about">À propos</a></li>
                     <li><a href="index.html#contact">Contact</a></li>
                 </ul>
-            </nav>
-        </div>
-    </header>
-
-    <main class="service-page">
-        <section class="service-hero" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('pictures/Interlock-Driveway-scaled.webp');">
-            <div class="container">
-                <h1>Installation et Réparation de Pavé-Uni</h1>
             </div>
-        </section>
-
-        <section class="service-details">
-            <div class="container">
-                <div class="service-content">
-                    <h2>Des surfaces parfaites et durables</h2>
-                    <p>Service complet d'installation et de réparation de pavé-uni pour allées, terrasses et stationnements.</p>
-                    
-                    <h3>Nos services :</h3>
-                    <ul>
-                        <li>Installation neuve de pavé-uni</li>
-			<li>Remise à neuf du pavé-uni</li>
-                        <li>Réparation et remplacement de sections</li>
-                        <li>Nivellement de surfaces affaissées</li>
-                        <li>Application de sable polymère</li>
-                        <li>Conseils en design et motifs</li>
-                    </ul>
-
-                  <!--   <div class="service-cta">
-                        <a href="#contact" class="btn">Demander un devis</a>
-                    </div> -->
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-                <div class="container">
-            <div class="footer-container">
-                <div class="footer-col">
-                    <h3>Maintenance Adjoka</h3>
-                    <p>Experts en entretien extérieur</p>
-                </div>
-                <div class="footer-col">
-                    <h3>Services</h3>
-                    <ul>
-                        <li><a href="tonteDeGazon.html">Tonte de gazon</a></li>
-                        <li><a href="paysagement.html">Paysagement</a></li>
-                        <li><a href="NettoPression.html">Nettoyage pression</a></li>
-                        <li><a href="paveUni.html">Pavé-uni</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h3>Contact</h3>
-                    <p><i class="fas fa-phone"></i> 438-988-1574</p>
-                    <p><i class="fas fa-envelope"></i> maintenance.adjoka@gmail.com</p>
-                </div>
-            </div>
-            <div class="copyright">
-                <p>&copy; 2026 Maintenance Adjoka. Tous droits réservés.</p>
+            <div class="footer-col">
+                <h4>Services</h4>
+                <ul>
+                    <li><a href="paveUni.html">Pavé-uni</a></li>
+                    <li><a href="paysagement.html">Paysagement</a></li>
+                    <li><a href="tonteDeGazon.html">Tonte de gazon</a></li>
+                    <li><a href="NettoPression.html">Nettoyage à pression</a></li>
+                </ul>
             </div>
         </div>
-    </footer>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Maintenance Adjoka. Tous droits réservés. &nbsp;|&nbsp; <a href="politique-de-confidentialite.html">Politique de confidentialité</a></p>
+        </div>
+    </div>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
